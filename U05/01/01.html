@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>01</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="01.css">
+    </head>
+    <body>
+        <main>
+            <div id="divGeneral1">
+                <h2>PROPAGACIÓN DE EVENTOS FASE BURBUJA</h2>
+                <div id="div1">
+                    <div id="div2">
+                        <p id="p2">Parrafo2 dentro de div2</p>
+                    </div>
+                    <p id="p1">Parrafo1 fuera de div2</p>
+                </div>
+            </div>
+            <div id="divGeneral2">
+                <h2>PROPAGACIÓN DE EVENTOS FASE CAPTURA</h2>
+                <div id="div11">
+                    <div id="div22">
+                        <p id="p22">Parrafo22 dentro de div22</p>
+                    </div>
+                    <p id="p11">Parrafo11 fuera de div22</p>
+                </div>
+            </div>
+            <div id="divGeneral3">
+                <h2>ANULACIÓN DE EVENTOS</h2>
+                <div id="div111">
+                    <div id="div222">
+                        <p id="p222">Parrafo222 fuera de div222</p>
+                    </div>
+                    <p id="p111">Parrafo111 fuera de div222</p>
+                </div>
+            </div>
+            <div id="divGeneral4">
+                <h2>CAPTURA EN ELEMENTOS DINÁMICOS</h2>
+                <div id="div1111">
+                    <button type="button" onclick="">Activar captura de eventos</button><br>
+                    <button type="button" onclick="">Botón 1</button><br>
+                    <button type="button" onclick="">Botón 2</button><br>
+                    <button type="button" onclick="">Botón 3</button><br>
+                    <button type="button" onclick="">Desactivar captura de eventos</button></div>
+            </div>
+        </main>
+        <script src="01.js"></script>
+    </body>
+</html>

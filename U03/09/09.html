@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>09</title>
+        <style>
+            .bombilla{
+                border-radius: 60px;
+                width: 100px;
+                height: 100px;
+                border: solid 5px rgb(0, 0, 0);
+                position: relative;
+                left: 18px;
+                float: left;
+                margin-top: 5px;
+            }
+            .cuerpo{
+                border-radius: 10px;
+                width: 150px;
+                height: 400px;
+                border: solid 5px rgb(0, 0, 0);
+                position: relative;
+                margin-top: 5px;
+            }            
+            .colorRojo{
+                background-color: rgb(128, 0, 0);
+            }
+            .colorAmarillo{
+                background-color: rgb(128, 128, 0);
+            }
+            .colorVerde{
+                background-color: rgb(0, 128, 0);
+            }
+            .colorNegro{
+                background-color: rgb(0, 0, 0);
+            }
+        </style>
+    </head>
+    <body>
+        <br>
+        <script src="09.js"></script>
+        <main>
+            <div class="cuerpo colorNegro">
+                <div id="rojo" class="bombilla colorRojo"></div>
+                <div id="amarillo" class="bombilla colorAmarillo"></div>
+                <div id="verde" class="bombilla colorVerde"></div>
+            </div>
+            <div>
+                <button onclick="iniciar();" type="button">Iniciar</button>
+                <button onclick="parar();" type="button">Parar</button>
+            </div>
+        </main>
+    </body>
+</html>

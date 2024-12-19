@@ -1,0 +1,17 @@
+table{
+    display: table;
+    border-collapse: collapse;
+    textarea{
+        margin: 5px;
+        width: 95%;
+    }
+}
+.ocultado{
+    display: none;
+}
+.mostrado{
+    display: block;
+}
+.erroneo{
+    border: 2.5px solid red;
+}

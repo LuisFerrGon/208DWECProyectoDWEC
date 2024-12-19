@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>07</title>
+    </head>
+    <body>
+        <script src="07.js"></script>
+        <main>
+            <div>
+                <label for="nombre">Introduzca valor para fibonacci</label>
+                <input type="number" id="fib">
+                <button onclick="fibo(document.getElementById('fib').value);" type="button">Fibonacci recursivo</button>
+                <button onclick="fibonacciNR(document.getElementById('fib').value);" type="button">Fibonacci</button>
+            </div>
+            <div>
+                <label for="nombre">Introduzca valor para factorial</label>
+                <input type="number" id="fac">
+                <button onclick="fact(document.getElementById('fac').value);" type="button">Factorial recursivo</button>
+                <button onclick="factorialNR(document.getElementById('fac').value);" type="button">Factorial</button>
+            </div>
+            <div>
+                <label for="nombre">Introduzca valor para combinatarios</label>
+                <input type="number" id="m" placeholder="m">
+                <input type="number" id="n" placeholder="n">
+                <button onclick="comb(document.getElementById('m').value, document.getElementById('n').value);" type="button">Combinatorio recursivo</button>
+            </div>
+        </main>
+    </body>
+</html>

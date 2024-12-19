@@ -1,0 +1,36 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#elementosArrastrables{
+    display: flex;
+    height: 300px;
+    width: 100%;
+    border: 1px dotted #000000;
+}
+#elementosDestinoArrastres{
+    width: 100%;
+    border: 1px dotted #000000;
+    columns: 3;
+}
+.contenedorArrastrable{
+    flex:0 0 1;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    margin: auto;
+    box-sizing: border-box;
+}
+.contenedor{
+    flex:0 0 1;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border: 2px solid #000000;
+    box-sizing: border-box;
+    font-size: 30px;
+}

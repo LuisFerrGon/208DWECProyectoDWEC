@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>14</title>
+        <style>
+            #texto{
+                width: 350px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="14.js"></script>
+        <main>
+            <div>
+                <textarea id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati quas veniam possimus hic mollitia corporis ducimus beatae reprehenderit maiores molestias commodi quaerat alias ipsa, provident dicta nostrum a natus!</textarea>
+                <button onclick="buscar(document.getElementById('texto').value);" type="button">Buscar caractéres</button>
+            </div>
+            <div>
+                <p id="cantidad"></p>
+            </div>
+        </main>
+    </body>
+</html>

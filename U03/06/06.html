@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>06</title>
+    </head>
+    <body>
+        <script src="06.js"></script>
+        <main>
+            <div>
+                <label for="nombre">Introduzca su nombre</label>
+                <input type="text" id="nombre">
+                <button onclick="validarNombre(document.getElementById('nombre').value)" type="button">Validar nombre</button>
+            </div>
+            <div>
+                <label for="apellidos">Introduzca sus apellidos</label>
+                <input type="text" id="apellidos">
+                <button onclick="validarApellidos(document.getElementById('apellidos').value)" type="button">Validar apellidos</button>
+            </div>
+            <div>
+                <label for="direccion">Introduzca su direccion</label>
+                <input type="text" id="direccion">
+                <button onclick="validarDireccion(document.getElementById('direccion').value)" type="button">Validar direccion</button>
+            </div>
+            <div>
+                <label for="telefono">Introduzca su telefono</label>
+                <input type="text" id="telefono">
+                <button onclick="validarDireccion(document.getElementById('telefono').value)" type="button">Validar telefono</button>
+            </div>
+        </main>
+    </body>
+</html>

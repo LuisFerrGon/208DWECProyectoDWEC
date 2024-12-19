@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>07</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="07.css">
+    </head>
+    <body>
+        <main>
+            <h1>Validador de Clave Bancaria</h1>
+            <h2 id="claveGenerada">Clave Generada: </h2>
+            <div id="insertarClave">
+                <div id="numeros">
+                    <button type="button" id="b1" onclick="anadir(b1.innerText)" class="num">b1</button>
+                    <button type="button" id="b2" onclick="anadir(b2.innerText)" class="num">b2</button>
+                    <button type="button" id="b3" onclick="anadir(b3.innerText)" class="num">b3</button>
+                    <button type="button" id="b4" onclick="anadir(b4.innerText)" class="num">b4</button>
+                    <button type="button" id="b5" onclick="anadir(b5.innerText)" class="num">b5</button>
+                    <button type="button" id="b6" onclick="anadir(b6.innerText)" class="num">b6</button>
+                    <button type="button" id="b7" onclick="anadir(b7.innerText)" class="num">b7</button>
+                    <button type="button" id="b8" onclick="anadir(b8.innerText)" class="num">b8</button>
+                    <button type="button" id="b9" onclick="anadir(b9.innerText)" class="num">b9</button>
+                    <button type="button" id="b0" onclick="anadir(b0.innerText)" class="num">b0</button>
+                </div>
+                <input type="text" maxlength="6" minlength="6" placeholder="Introduzca la clave" id="inputClave">
+                <br>
+                <button type="button" onclick="validar(document.getElementById('inputClave').value)">Validar</button>
+                <button type="button" onclick="location.reload()">Reiniciar</button>
+                <p id="mensaje"></p>
+            </div>
+        </main>
+        <script src="07.js"></script>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>15</title>
+        <style>
+            textarea{
+                width: 350px;
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="15.js"></script>
+        <main>
+            <div>
+                <textarea id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati quas veniam possimus hic mollitia corporis ducimus beatae reprehenderit maiores molestias commodi quaerat alias ipsa, provident dicta nostrum a natus!</textarea>
+                <br>
+                <label for="numero">Distancia</label>
+                <input type="number" min="0" max="27" step="1" id="numero">
+                <button onclick="codificar(document.getElementById('texto').value, document.getElementById('numero').value);" type="button">Codificar</button>
+                <button onclick="resolver(document.getElementById('texto').value, document.getElementById('numero').value);" type="button">Resolver</button>
+            </div>
+            <div>
+                <textarea id="cantidad" readonly></textarea>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,67 @@
+main{
+    width: 50%;
+    margin: auto;
+    h1{
+        text-align: center;
+        color: #a9a9a9;
+    }
+    h2{
+        text-align: center;
+        color: #d3d3d3;
+    }
+    #insertarClave{
+        *{
+            margin: 5px;
+        }
+        button{
+            border: 0;
+            border-radius: 5px;
+            color: #fff;
+            margin: 5px auto;
+            box-sizing: border-box;
+        }
+        button:hover{
+            border: 2px black solid;
+        }
+        #numeros{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            .num{
+                background-color: #4093e0;
+                width: 30%;
+                height: 30px;
+            }
+            .num:hover{
+                background-color: #0659a6;
+            }
+        }
+        #inputClave{
+            width: 100%;
+        }
+        >button{
+            padding: 5px;
+        }
+        >button:first-of-type{
+            background-color: #00aa00;
+        }
+        >button:first-of-type:hover{
+            background-color: #007000;
+        }
+        >button:nth-of-type(2){
+            background-color: #ff0000;
+        }
+        >button:nth-of-type(2):hover{
+            background-color: #c50000;
+        }
+        #mensaje{
+            text-align: center;
+        }
+        #mensaje.erroneo{
+            color: #ff0000;
+        }
+        #mensaje.correcto{
+            color: #00aa00;
+        }
+    }
+}

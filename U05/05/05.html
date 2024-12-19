@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>05</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="05.css">
+    </head>
+    <body>
+        <main>
+            <div id="botones">
+                <button type="button" onclick="mostrarFormulario()">Mostrar formulario</button>
+                <button type="button" onclick="ocultarFormulario()">Ocultar formulario</button>
+            </div>
+            <div id="formulario" class="mostrado">
+                <form action="#" method="get">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td><label for="nombre">Nombre:</label></td>
+                                <td><input type="text" name="nombre" id="nombre" placeholder="Nombre"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="apellidos">Apellidos:</label></td>
+                                <td><input type="text" name="apellidos" id="apellidos" placeholder="Apellidos"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="direccion">Dirección:</label></td>
+                                <td><input type="text" name="direccion" id="direccion" placeholder="Dirección"></td>
+                            </tr>
+                            <tr>
+                                <td><label for="telefono">Teléfono:</label></td>
+                                <td><input type="text" name="telefono" id="telefono" placeholder="Teléfono"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+        </main>
+        <script src="05.js"></script>
+    </body>
+</html>

@@ -1,0 +1,11 @@
+#imagenes{
+    display: flex;
+    img{
+        border: 2px solid black;
+        border-top-color: gray;
+        border-left-color: gray;
+        margin: 5px;
+        width: 100px;
+        height: 100px;
+    }
+}

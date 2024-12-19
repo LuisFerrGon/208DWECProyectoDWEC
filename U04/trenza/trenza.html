@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Trenza</title>
+        <style id="estilo">
+        </style>
+    </head>
+    <body>
+        <script src="trenza.js"></script>
+        <main>
+            <div>
+                <label for="num">Introduzca valor</label>
+                <input type="number" id="num" step="1" min="3" max="2048" value="3">
+                <!-- 11, 14, 18, 22, 23, 28, 30, 33, 66, 112, 129, 140, 150, 167, 168, 200, 656, 1000 -->
+                <button onclick="trenzar(Math.floor(Math.abs(document.getElementById('num').value)));" type="button">Trenzar</button>
+            </div>
+            <div id="colores">
+            </div>
+            <table id="color"></table>
+        </main>
+    </body>
+</html>
+<!--
+    minimo: 3
+                                                        2048
+                                                    4096
+                                                8192
+                                            16384
+                                        32768
+                                    65536
+                                131072
+                            262144
+                        524288
+                    1048576
+                2097152
+            4194304
+        8388608
+    maximo hipotético: 16777215
+-->

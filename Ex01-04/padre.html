@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Examen</title>
+        <link type="text/css" rel="stylesheet" href="padre.css">
+    </head>
+    <body>
+        <script src="padre.js"></script>
+        <header>
+            <h1>Mi semáforo</h1>
+        </header>
+        <main>
+            <button type="button" onclick="crearSemaforo()" id="crearSemaforo">Crear semaforo</button>
+            <div id="semaforo"></div>
+            <button type="button" onclick="cambiarColor(document.getElementById('passwd').value, 'verde')">Bombilla verde</button>
+            <button type="button" onclick="cambiarColor(document.getElementById('passwd').value, 'amarillo')">Bombilla amarilla</button>
+            <button type="button" onclick="cambiarColor(document.getElementById('passwd').value, 'rojo')">Bombilla roja</button>
+            <br>
+            <input type="password" id="passwd">
+            <label for="passwd">El formato debería ser 3-6 carácteres numéricos, un simbolo de la siguiente lista(@#~%&amp;/$) y  3-6 carácteres numéricos</label>
+            <br>
+            <button type="button" onclick="abrir()">Abrir ventana hija</button>
+            <button type="button" onclick="cerrar()">Cerrar ventana hija</button>
+        </main>
+    </body>
+</html>

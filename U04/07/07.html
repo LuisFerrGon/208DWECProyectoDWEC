@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>07</title>
+    </head>
+    <body>
+        <main>
+            <div>
+                <h2>Por etiqueta</h2>
+                <input type="text" id="textotag" value="Selección <br><span style='display: none;'>HIDDEN TEXT</span> de elemento po etiqueta">
+                <button type="button" onclick="tagTC(document.getElementById(textotag).value)">textContent</button>
+                <button type="button" onclick="tagIH(document.getElementById(textotag).value)">innerHTML</button>
+                <button type="button" onclick="tagIT(document.getElementById(textotag).value)">innerText</button>
+            </div>
+            <p id="parrafo"></p>
+            <div>
+                <h2>Por id</h2>
+                <input type="text" id="textoid" value="Selección <br><span style='display: none;'>HIDDEN TEXT</span> de elemento po etiqueta">
+                <button type="button" onclick="idTC(document.getElementById(textoid).value)">textContent</button>
+                <button type="button" onclick="idIH(document.getElementById(textoid).value)">innerHTML</button>
+                <button type="button" onclick="idIT(document.getElementById(textoid).value)">innerText</button>
+            </div>
+        <script src="07.js"></script>
+        </main>
+    </body>
+</html>

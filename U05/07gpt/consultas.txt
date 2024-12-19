@@ -1,0 +1,3 @@
+Crea un archivo js y un archivo html que sirvan para validar una clave de 6 dígitos creado en el archivo js que se deban introducir mediante botones del archivo html. El valor individual de estos botones será aleatorio, pero siempre habrá 10 y solo aparecerá un valor del 0 al 9 una vez. Si se reinicia la página, se volverá a calcular la clave y se alteraran los botones.
+En el archivo html se debe mostrar la clave que se debe introducir.
+En el archivo html debe tener un botón para reiniciar la pagina y otro para verificar la clave.

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Práctica 8</title>
+    </head>
+    <body>
+        <script src="practica8.js"></script>
+        <p id="demo"></p>
+        <!--<script>
+            function esPrimo(numero) {
+                if (numero <= 1) return false;
+                for (let i = 2; i <= Math.sqrt(numero); i++) {
+                    if (numero % i === 0) return false;
+                }
+                return true;
+            }
+
+            function obtenerDivisores(numero) {
+                const divisores = [];
+                for (let i = 1; i <= numero; i++) {
+                    if (numero % i === 0) {
+                        divisores.push(i);
+                    }
+                }
+                return divisores;
+            }
+
+            function solicitarNumero() {
+                let numero;
+
+                do {
+                    numero = prompt("Introduce un número entre 1 y 300:");
+                    numero = parseInt(numero, 10);
+                } while (isNaN(numero) || numero < 1 || numero > 300);
+
+                return numero;
+            }
+
+            const numero = solicitarNumero();
+
+            if (esPrimo(numero)) {
+                alert(`${numero} es un número primo.`);
+            } else {
+                const divisores = obtenerDivisores(numero);
+                alert(`${numero} no es un número primo. Sus divisores son: ${divisores.join(', ')}`);
+            }
+        </script>-->
+    </body>
+</html>

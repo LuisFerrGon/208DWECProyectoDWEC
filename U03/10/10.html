@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>10</title>
+    </head>
+    <body>
+        <br>
+        <script src="10.js"></script>
+        <main>
+            <div>
+                <label for="texto">Introduzca valores separados por comas</label>
+                <input type="text" id="texto" value='{"a":"A", "b":"B"}'>
+                <button onclick="aJSON(document.getElementById('texto').value);" type="button">A JSON</button>
+                <button onclick="aTexto();" type="button">Mostrar JSON</button>
+            </div>
+            <pre id="resultadotexto"></pre>
+            <pre id="resultadojson"></pre>
+        </main>
+    </body>
+</html>

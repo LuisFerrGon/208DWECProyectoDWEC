@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>04</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="04.css">
+    </head>
+    <body>
+        <main>
+            <div id="elementosArrastrables">
+                <img src="images/cruz.gif" id="cruz1" class="contenedorArrastrable cruz" alt="cruz" draggable="true" ondragstart="drag(event)">
+                <img src="images/cruz.gif" id="cruz2" class="contenedorArrastrable cruz" alt="cruz" draggable="true" ondragstart="drag(event)">
+                <img src="images/cruz.gif" id="cruz3" class="contenedorArrastrable cruz" alt="cruz" draggable="true" ondragstart="drag(event)">
+                <img src="images/circulo.gif" id="circulo1" class="contenedorArrastrable circulo" alt="circulo" draggable="true" ondragstart="drag(event)">
+                <img src="images/circulo.gif" id="circulo2" class="contenedorArrastrable circulo" alt="circulo" draggable="true" ondragstart="drag(event)">
+                <img src="images/circulo.gif" id="circulo3" class="contenedorArrastrable circulo" alt="circulo" draggable="true" ondragstart="drag(event)">
+            </div>
+            <div id="elementosDestinoArrastres">
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+                <div class="contenedor" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+            </div>
+        </main>
+        <script src="04.js"></script>
+    </body>
+</html>

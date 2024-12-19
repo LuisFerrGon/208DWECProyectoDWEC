@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validador de Clave</title>
+    <style>
+        .buttons-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+            max-width: 300px;
+            margin: 20px auto;
+        }
+
+        button {
+            padding: 20px;
+            font-size: 18px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #clave-container {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        #clave-container input {
+            font-size: 24px;
+            padding: 10px;
+            width: 40px;
+            margin: 0 5px;
+            text-align: center;
+        }
+
+        #message {
+            margin-top: 20px;
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        #clave-generada {
+            margin-top: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align:center;">Validador de Clave</h1>
+    
+    <div id="clave-generada"></div> <!-- Aquí se mostrará la clave generada -->
+
+    <div class="buttons-container" id="buttons-container"></div>
+
+    <div id="clave-container">
+        <h3>Introduce la clave:</h3>
+        <input type="text" id="digit-1" maxlength="1">
+        <input type="text" id="digit-2" maxlength="1">
+        <input type="text" id="digit-3" maxlength="1">
+        <input type="text" id="digit-4" maxlength="1">
+        <input type="text" id="digit-5" maxlength="1">
+        <input type="text" id="digit-6" maxlength="1">
+    </div>
+
+    <div id="message"></div>
+
+    <script src="07-02gpt.js"></script>
+</body>
+</html>

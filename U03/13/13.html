@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>13</title>
+        <style>
+            #texto{
+                width: 350px;
+                height: 85px;
+            }
+        </style>
+    </head>
+    <body>
+        <script src="13.js"></script>
+        <main>
+            <div>
+                <textarea id="texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro obcaecati quas veniam possimus hic mollitia corporis ducimus beatae reprehenderit maiores molestias commodi quaerat alias ipsa, provident dicta nostrum a natus!</textarea>
+                <br><label for="palabra">Introduzca palabra a buscar</label>
+                <input type="text" id="palabra">
+                <button onclick="buscar(document.getElementById('texto').value, document.getElementById('palabra').value);" type="button">Buscar palabras</button>
+            </div>
+            <div>
+                <p id="cantidad"></p>
+                <p id="desord"></p>
+                <p id="orden"></p>
+            </div>
+        </main>
+    </body>
+</html>

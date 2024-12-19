@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>02</title>
+        <meta charset="UTF-8">
+        <link type="text/css" rel="stylesheet" href="02.css">
+    </head>
+    <body>
+        <main>
+            <h1>DELEGACIÓN DE EVENTOS (FASE BURBUJA)</h1>
+            <div id="divGeneral">
+                <div class="contenedor">Soy div1</div>
+                <div class="contenedor">Soy div2</div>
+                <div class="contenedor">Soy div3</div>
+                <div class="contenedor">Soy div4</div>
+                <div class="contenedor">Soy div5</div>
+            </div>
+        </main>
+        <script>
+            var divGeneral=document.getElementById("divGeneral");
+            divGeneral.addEventListener("click", (event)=>{console.log(event.target.textContent);});
+        </script>
+    </body>
+</html>

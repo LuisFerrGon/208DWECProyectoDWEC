@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>12-1</title>
+    </head>
+    <body>
+        <br>
+        <script src="12-1.js"></script>
+        <main>
+            <div>
+                <label for="generado">Nº de tarjeta generado: </label>
+                <input type="text" id="generado" disabled>
+                <button onclick="generar();" type="button">Generar</button>
+                <br><label for="numero">Nº de tarjeta a validar: </label>
+                <input type="text" id="numero">
+                <button onclick="validar(document.getElementById('numero').value);" type="button">Validar</button>
+            </div>
+            <p id="resultado"></p>
+        </main>
+    </body>
+</html>
