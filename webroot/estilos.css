@@ -12,40 +12,64 @@
     margin: 5px;
     padding: 0px;
 }
-h1{
-    text-align: center;
-    color: var(--color5);
-    background-color: var(--color4);
-    border-radius: 50px;
-    border: 2.5px solid var(--color6);
-}
-nav{
-    h2{
-        color: var(--color3);
-    }
-    a:link, a:visited, a:hover, a:active{
-        text-decoration: none;
-        color: var(--color4);
-        background-color: var(--color1);
-        text-align: center;
-        padding: 5px;
-        border-radius: 5px;
-        margin: 5px;
-    }
-}
-footer{
-    background-color: var(--blanco);
-    color: var(--color2);
-    border-radius: 10px;
-    border: 2.5px solid var(--color5);
-    display: flex;
-    justify-content: space-evenly;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-    right: 0;
+body{
     a:link, a:visited, a:hover, a:active{
         text-decoration: none;
         color: var(--color3);
+    }
+    header{
+        h1{
+            text-align: center;
+            color: var(--color5);
+            background-color: var(--color4);
+            border-radius: 50px;
+            border: 2.5px solid var(--color6);
+        }
+    }
+    nav{
+        h2{
+            color: var(--color3);
+        }
+        a:link, a:visited, a:hover, a:active{
+            color: var(--color4);
+            background-color: var(--color1);
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 5px;
+        }
+    }
+    main{
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid black;
+            tr{
+                >*{
+                    border: 1px solid black;
+                }
+                th{
+                    padding: 5px;
+                    color: var(--color2);
+                    width: min-content;
+                }
+                td.eje{
+                    padding: 2.5px 5px;
+                    width: min-content;
+                }
+            }
+        }
+    }
+    footer{
+        background-color: var(--blanco);
+        color: var(--color2);
+        border-radius: 10px;
+        border: 2.5px solid var(--color5);
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        right: 0;
     }
 }
