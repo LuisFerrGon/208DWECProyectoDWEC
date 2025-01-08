@@ -1,11 +1,12 @@
 :root{
-    --blanco:#ffffff;
-    --color5:#fdeba9;
-    --color1:#f6d76b;
-    --color2:#ff9036;
-    --color4:#ff5475;
-    --color3:#d6254d;
-    --color6:#8b0000;
+    --blanco:#fff;
+    --amarilloClaro:#fdeba9;
+    --amarillo:#f6d76b;
+    --naranja:#ff9036;
+    --fucsia:#ff5475;
+    --carmin:#d6254d;
+    --granate:#8b0000;
+    --negro:#000;
 }
 /*Reseteo*/
 *{
@@ -15,24 +16,24 @@
 body{
     a:link, a:visited, a:hover, a:active{
         text-decoration: none;
-        color: var(--color3);
+        color: var(--carmin);
     }
     header{
         h1{
             text-align: center;
-            color: var(--color5);
-            background-color: var(--color4);
+            color: var(--amarilloClaro);
+            background-color: var(--fucsia);
             border-radius: 50px;
-            border: 2.5px solid var(--color6);
+            border: 2.5px solid var(--granate);
         }
     }
     nav{
         h2{
-            color: var(--color3);
+            color: var(--carmin);
         }
         a:link, a:visited, a:hover, a:active{
-            color: var(--color4);
-            background-color: var(--color1);
+            color: var(--fucsia);
+            background-color: var(--amarillo);
             text-align: center;
             padding: 5px;
             border-radius: 5px;
@@ -43,14 +44,14 @@ body{
         table{
             width: 100%;
             border-collapse: collapse;
-            border: 1px solid black;
+            border: 1px solid var(--negro);
             tr{
                 >*{
-                    border: 1px solid black;
+                    border: 1px solid var(--negro);
                 }
                 th{
                     padding: 5px;
-                    color: var(--color2);
+                    color: var(--naranja);
                     width: min-content;
                 }
                 td.eje{
@@ -62,9 +63,9 @@ body{
     }
     footer{
         background-color: var(--blanco);
-        color: var(--color2);
+        color: var(--naranja);
         border-radius: 10px;
-        border: 2.5px solid var(--color5);
+        border: 2.5px solid var(--amarilloClaro);
         display: flex;
         justify-content: space-evenly;
         position: fixed;
