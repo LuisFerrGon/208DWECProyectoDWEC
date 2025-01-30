@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>04</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <h2>FETCH y JSON</h2>
+        </header>
+        <main></main>
+        <script type="module">
+            import {datos} from "./04.js";
+            console.log(datos);
+            datos.forEach(element => {
+                console.log("El "+element[tipo].toUpperCase()+" solicitado es "+element[numero]+".")
+            });
+        </script>
+    </body>
+</html>

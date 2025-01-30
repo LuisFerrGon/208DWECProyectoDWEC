@@ -1,13 +1,15 @@
 export var main=document.createElement("main");
-main;
 fetch("https://randomuser.me/api/?results=3")
     .then(response=>{
-        console.log(response.status);
+        if(response.ok){
+            return response.text();
+        }else{
+            throw new Error("Error: "+response.status)
+        }
     })
     .then(data=>{
-
+        main.innerHTML="<div>"+data+"</div>"
     })
     .catch(error=>{
-        main.innerHTML="<div>"+error.status+"</div>";
+        console.log(error)
     })
-;
