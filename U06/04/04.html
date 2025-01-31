@@ -11,10 +11,7 @@
         <main></main>
         <script type="module">
             import {datos} from "./04.js";
-            console.log(datos);
-            datos.forEach(element => {
-                console.log("El "+element[tipo].toUpperCase()+" solicitado es "+element[numero]+".")
-            });
+            document.getElementsByTagName("main")[0].append(datos);
         </script>
     </body>
 </html>
