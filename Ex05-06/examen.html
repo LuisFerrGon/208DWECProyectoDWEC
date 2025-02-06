@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Examen DW2T_DWEC_T5-T6 - OpcionA</title>
+        <link type="text/css" rel="stylesheet" href="examen.css">
+    </head>
+    <body>
+        <h1></h1>
+        <h2>Selecciona tu personaje favorito para ver algunas de sus características</h2>
+        <label for="botonPersonajes"></label><br>
+        <button id="botonPersonajes" name="botonPersonajes" onclick="crearSelect(arrayPersonajes);" type="button">Mostrar listado de personajes</button><br><br>
+        <!-- Contenedor donde se añadirá el elemento select -->
+        <div id="contenedorSelectPersonajes"></div><br>
+        <!-- Contenedor donde se añadirá la tabla en función del personaje seleccionado en el elemento select -->
+        <div id="contenedorTablaPersonajes"></div><br>
+        <!-- Contenedor donde se añadirá el error si se produce al cargar el elemento select -->
+        <div id="contenedorError"></div>
+        <label for="botonPersonajesPaginaAtras"></label>
+        <button id="botonPersonajesPaginaAtras" name="botonPersonajesPaginaAtras" onclick="mostrarAnterior()">Mostrar personajes(página anterior)</button>
+        <label for="botonPersonajesPaginaSiguiente"></label>
+        <button id="botonPersonajesPaginaSiguiente" name="botonPersonajesPaginaSiguiente" onclick="mostrarSiguiente()">Mostrar personajes(página siguiente)</button>
+        <script src="examen.js"></script>
+        <!-- Si se utilixa import da error -->
+        <!-- <script type="module">
+            import {resultado as r} from "./examen.js";
+        </script> -->
+    </body>
+</html>

@@ -11,12 +11,12 @@
         <script type="module">
             // Cambiar header y footer
             import {header, footer} from "./partes.js";
+            console.log(header);
             document.body.replaceChild(header, document.getElementById("header"));
             document.body.replaceChild(footer, document.getElementById("footer"));
             // Cambiar body
             import {main} from "./03.js";
             document.body.replaceChild(main, document.getElementById("main"));
         </script>
-        <script src="03.js" type="module"></script>
     </body>
 </html>
